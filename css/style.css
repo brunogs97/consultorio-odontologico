@@ -1,0 +1,121 @@
+:root {
+    --main-font: 'Noto Sans', sans-serif;
+    --green: #0a9f3a;
+    --white: #e6f6f6;
+    --border: #f6eeef;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+#header {
+    background-color: var(--green);
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleHeader {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+#mainContent {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+
+.dentistPhoto {
+    width: 20vw;
+}
+
+.patientName {
+    padding: .8em .5em;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    width: 292px;
+}
+
+.optionsButton {
+    width: 380px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    background-color: var(--green);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    margin-top: .5em;
+    padding: .5em;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--white);
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttonProperties {
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.patientSection {
+    width: 400px;
+    position: absolute;
+    right: 13.5vw;
+    top: 22vh;
+    font-family: var(--main-font);
+    border: 1px solid var(--border);
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.titlePatientSection {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.patientInAttendance {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--green);
+}
+
+.waitingPatientList {
+    margin-top: 1em;
+    line-height: 1.5em;
+}
+
+@media only screen and (max-width: 1440px) {
+    .patientSection {
+        width: 400px;
+        position: absolute;
+        right: 11vw;
+        top: 31vh;
+    }
+}
+
+@media only screen and (min-width: 1450px) {
+    .patientSection {
+        width: 400px;
+        position: absolute;
+        right: 13vw;
+        top: 22vh;
+    }
+}
+
+
+

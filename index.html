@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/c5ed4752ba.js" crossorigin="anonymous"></script>
+    <title>Consultório Odontológico</title>
+</head>
+<body>
+    <header id="header">
+        <h1 class="titleHeader">Consultório Odontológico</h1>
+    </header>
+
+    <section id="mainContent">
+        <img src="./img/dentista.png" class="dentistPhoto" alt="Foto logo da clínica">
+        <form class="patientForm">
+            <label for="patientName">Paciênte</label>
+            <input type="text" required autofocus id="patientName" class="patientName" placeholder="Digite nome completo">
+            <div class="optionsButton">
+                <div class="button">
+                    <i class="fa-solid fa-plus"></i>
+                    <input type="button" value="Adicionar" class="buttonProperties addName">
+                </div>
+                <div class="button">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <input type="button" value="Urgência" class="buttonProperties btUrgency">
+                </div>
+                <div class="button">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <input type="button" value="Atender" class="buttonProperties btAttendance">
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <div class="patientSection">
+        <h3 class="titlePatientSection">
+            Em atendimento: 
+            <span class="patientInAttendance"></span>
+        </h3>
+        <pre class="waitingPatientList"></pre>
+    </div>
+    
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
