@@ -74,9 +74,6 @@ body {
 
 .patientSection {
     width: 400px;
-    position: absolute;
-    right: 13.5vw;
-    top: 22vh;
     font-family: var(--main-font);
     border: 1px solid var(--border);
     padding: 1em;
@@ -99,6 +96,7 @@ body {
     line-height: 1.5em;
 }
 
+/*
 @media only screen and (max-width: 1440px) {
     .patientSection {
         width: 400px;
@@ -116,6 +114,6 @@ body {
         top: 22vh;
     }
 }
-
+*/
 
 
