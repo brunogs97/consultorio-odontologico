@@ -6,7 +6,7 @@ const btAttendance = document.querySelector('.btAttendance');
 const waitingPatientList = document.querySelector('.waitingPatientList');
 const patientInAttendance = document.querySelector('.patientInAttendance');
 
-const listToStorePatients = [];  // armazer a lista dos paciêntes
+const listToStorePatients = [];  // armazer a lista dos pacientes
 
 // cria um "ouvinte" de evento esperando o botão ser clicado
 addButton.addEventListener('click', () => {
@@ -17,21 +17,21 @@ addButton.addEventListener('click', () => {
         return;
     };
 
-    listToStorePatients.push(name);  // adicionar os nomes dos paciêntes na lista
+    listToStorePatients.push(name);  // adicionar os nomes dos pacientes na lista
     
     let listNames = "";
     for(let i = 0; i < listToStorePatients.length; i++) {  // vai percorrer o vetor "listToStorePatients" 
         listNames += `${i + 1}. ${listToStorePatients[i]}\n` // vai atribuir o index e o nome na variável "listNames"
     } 
 
-    waitingPatientList.innerText = listNames;  // imprimir a lista de paciêntes na espera
+    waitingPatientList.innerText = listNames;  // imprimir a lista de pacientes na espera
     patientsName.value = "";
     patientsName.focus();
 })
 
 btUrgency.addEventListener('click', () => {
     const name = patientsName.value;
-    // se o campo nome do paciênte estiver em branco, um alert será acionado
+    // se o campo nome do paciente estiver em branco, um alert será acionado
     if(name === '') {
         alert('O campo está em branco, digite um nome!');
         return
@@ -43,8 +43,8 @@ btUrgency.addEventListener('click', () => {
         listNames += `${index + 1}. ${listToStorePatients[index]}\n`;
     })
 
-    waitingPatientList.innerText = listNames;  // listar paciêntes em espera
-    patientsName.value = "";  // limpar campo paciênte
+    waitingPatientList.innerText = listNames;  // listar pacientes em espera
+    patientsName.value = "";  // limpar campo paciente
     patientsName.focus();
 })
 
@@ -64,6 +64,6 @@ btAttendance.addEventListener('click', () => {
     })    
 
     waitingPatientList.innerText = listNames;
-    patientsName.value = "";  // limpar campo paciênte
+    patientsName.value = "";  // limpar campo paciente
     patientsName.focus();
 })
