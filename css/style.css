@@ -95,25 +95,3 @@ body {
     margin-top: 1em;
     line-height: 1.5em;
 }
-
-/*
-@media only screen and (max-width: 1440px) {
-    .patientSection {
-        width: 400px;
-        position: absolute;
-        right: 11vw;
-        top: 22vh;
-    }
-}
-
-@media only screen and (min-width: 1450px) {
-    .patientSection {
-        width: 400px;
-        position: absolute;
-        right: 13vw;
-        top: 22vh;
-    }
-}
-*/
-
-
